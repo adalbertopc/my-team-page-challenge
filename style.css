@@ -47,7 +47,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	max-width: 300px;
+	max-width: 240px;
 	max-height: 400px;
 }
 
@@ -78,6 +78,16 @@ body {
 	font-size: 0.875em;
 	margin-top: 13.5px;
 }
+.footer {
+	width: 100%;
+	margin-top: 100px;
+}
+
+.footer__message {
+	text-align: center;
+	font-size: 14px;
+	color: #a9a9a9;
+}
 
 @media screen and (min-width: 769px) {
 	.header {
@@ -93,7 +103,7 @@ body {
 
 	.crew {
 		grid-template-columns: repeat(3, 1fr);
-		grid-column-gap: 60px;
+		column-gap: 0;
 		margin-top: 80px;
 	}
 
@@ -101,7 +111,7 @@ body {
 		margin-top: unset;
 	}
 	.crew-member:nth-child(3n + 2) {
-		margin-top: 75px;
+		margin-top: 90px;
 	}
 
 	.crew-member__image-wrapper {
